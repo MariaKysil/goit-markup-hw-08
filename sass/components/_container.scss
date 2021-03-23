@@ -6,13 +6,16 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    outline: solid red;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    outline: solid yellow;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    outline: solid black;
   }
 }
