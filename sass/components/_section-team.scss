@@ -6,7 +6,9 @@
 }
 
 .team__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .team__item {
@@ -44,4 +46,10 @@
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+.team-thumb {
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
