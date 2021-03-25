@@ -18,30 +18,36 @@
   </head>
 
   <body class="page">
-    <!-- Шапка сайта -->
-    <header class="page-header page-header__portfolio">
-      <div class="container page-header__container">
+    <!-- page header -->
+    <header class="page-header">
+      <div class="container page-header__container page-header__portfolio">
         <nav class="page-header__navigation">
           <a href="./" class="logo link"
             ><span class="logo--accent">Web</span>Studio</a
           >
+          <!-- main site nav without navigation contacts  -->
 
-          <ul class="site-menu list">
-            <li class="site-menu__item">
-              <a href="./index.html" class="site-menu__link link">Студия</a>
-            </li>
-            <li class="site-menu__item">
-              <a href="" class="site-menu__link site-menu--current link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-menu__item">
-              <a href="" class="site-menu__link link">Контакты</a>
-            </li>
-          </ul>
+          <div class="nav-wrapper">
+            <ul class="site-menu list">
+              <li class="site-menu__item">
+                <a href="./index.html" class="site-menu__link link">Студия</a>
+              </li>
+              <li class="site-menu__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-menu__link site-menu--current link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-menu__item">
+                <a href="" class="site-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- navigation contacts -->
+
         <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
@@ -61,8 +67,19 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" class="mobile-toggle__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <!-- portfolio -->
       <section class="portfolio">
@@ -279,6 +296,7 @@
               <a href="" class="link">
                 <div class="card-thumb">
                   <img
+                    class="card-thumb__image"
                     src="./images/img-9.jpg"
                     srcset="./images/img-9.jpg 1x, ./images/img-9@2x.jpg 2x"
                     alt="этикетка"
@@ -382,7 +400,56 @@
       </div>
     </footer>
 
-     <script
+    <!-- manu-container -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle--close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="links-wrapper list">
+        <li class="menu-container__item">
+          <a href="./index.html" class="link menu-container__link">Студия</a>
+        </li>
+        <li class="menu-container__item">
+          <a
+            href="./portfolio.html"
+            class="link menu-container__link site-menu--current"
+            >Портфолио</a
+          >
+        </li>
+        <li class="menu-container__item">
+          <a href="" class="link menu-container__link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="contacts-wrapper list">
+        <li><a href="" class="contacts__phone link">+38 096 111 11 11</a></li>
+        <li>
+          <a href="" class="contacts__email link"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="media__container list">
+        <li class="media__item">
+          <a href="" class="media__link link">Instagram</a>
+        </li>
+        <li class="media__item">
+          <a href="" class="media__link link">Twitter</a>
+        </li>
+        <li class="media__item">
+          <a href="" class="media__link link">Facebook</a>
+        </li>
+        <li class="media__item">
+          <a href="" class="media__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

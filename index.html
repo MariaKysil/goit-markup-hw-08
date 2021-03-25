@@ -24,33 +24,28 @@
             ><span class="logo--accent">Web</span>Studio</a
           >
           <!-- main site nav without navigation contacts  -->
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <ul class="site-menu list">
-            <li class="site-menu__item">
-              <a href="" class="site-menu__link site-menu--current link"
-                >Студия</a
-              >
-            </li>
-            <li class="site-menu__item">
-              <a href="./portfolio.html" class="site-menu__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-menu__item">
-              <a href="" class="site-menu__link link">Контакты</a>
-            </li>
-          </ul>
+
+          <div class="nav-wrapper">
+            <ul class="site-menu list">
+              <li class="site-menu__item">
+                <a href="" class="site-menu__link site-menu--current link"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-menu__item">
+                <a href="./portfolio.html" class="site-menu__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-menu__item">
+                <a href="" class="site-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <!-- navigation contacts -->
+
         <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
@@ -70,6 +65,16 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" class="mobile-toggle__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -615,7 +620,7 @@
     </div>
     <!-- manu-container -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle menu-toggle--close js-close-menu">
         <svg width="40" height="40">
           <use href="./images/icons.svg#close"></use>
         </svg>

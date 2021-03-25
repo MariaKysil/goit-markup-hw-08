@@ -17,14 +17,14 @@
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      rgba(0, 21, 255, 0.4)
     ),
-    url('/images/mobile.jpg');
+    url('../images/mobile.jpg');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/images/mobile@2x.jpg');
+    background-image: url('../images/mobile@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -35,24 +35,24 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/tablet.jpg');
+      url('../images/tablet.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/tablet@2x.jpg');
+      background-image: url('../images/tablet@2x.jpg');
     }
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+    max-width: 1200px;
 
-    background-image: url('/images/desktop.jpg');
+    background-image: url('../images/desktop.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/desktop@2x.jpg');
+      background-image: url('../images/desktop@2x.jpg');
     }
   }
 
