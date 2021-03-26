@@ -22,7 +22,10 @@
 }
 
 .page-footer__address {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -160,10 +163,18 @@
 }
 
 .subscribe__input {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     min-width: 100%;
   }
-  width: 358px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
+
   margin: 0px;
   padding-left: 16px;
   padding-top: 15px;
