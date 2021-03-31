@@ -1413,6 +1413,7 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 40px;
   background-color: var(--white-color);
   z-index: 999;
   -webkit-transform: translateX(100%);
