@@ -137,6 +137,9 @@
 }
 
 .media__link {
+  display: flex;
+  flex-wrap: wrap;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
